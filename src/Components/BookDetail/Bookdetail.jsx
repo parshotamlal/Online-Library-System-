@@ -1,42 +1,54 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-export const Bookdetail = ({ book }) => {
+export const Bookdetail = () => {
+  const { id } = useParams(); // URL se book id milega
+  const book = useSelector((state) =>
+    state.books.find((b) => String(b.id) === id) // Redux store se book find kare
+  );
+
+  // Agar book na mile
+  if (!book) {
+    return (
+      <div className="text-center text-red-600 font-semibold mt-10">
+        Book not found!
+      </div>
+    );
+  }
+
   return (
-    <div className="max-w-5xl mx-auto my-12 px-4 md:px-8">
-      <div className="bg-white shadow-xl rounded-2xl overflow-hidden flex flex-col md:flex-row transition-transform duration-300 hover:scale-[1.01]">
+    <div className="max-w-4xl mx-auto my-10 px-4 md:px-8">
+      {/* Outer Card */}
+      <div className="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col md:flex-row">
         
-        {/* Book Image */}
-        <div className="md:w-1/3 bg-gradient-to-b from-gray-50 to-gray-200 flex justify-center items-center p-6">
+        {/* ----------------- Left: Book Image ----------------- */}
+        <div className="md:w-1/3 bg-gray-100 flex justify-center items-center p-4">
           <img
-            src={
-              book.cover || "https://via.placeholder.com/200x300?text=No+Image"
-            }
+            src={book.cover || "https://via.placeholder.com/200x300?text=No+Image"}
             alt={book.title}
-            className="w-full max-h-[400px] object-contain rounded-lg shadow-md"
+            className="w-full h-auto object-contain rounded"
           />
         </div>
 
-        {/* Book Details */}
-        <div className="md:w-2/3 p-8 flex flex-col justify-between gap-6">
+        {/* ----------------- Right: Book Details ----------------- */}
+        <div className="md:w-2/3 p-6 flex flex-col justify-between gap-4">
+          {/* Title, Author & Description */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-outfit font-bold text-indigo-700 tracking-wide">
-              {book.title}
-            </h2>
-            <p className="text-lg text-gray-600 mt-2">
-              by <span className="font-semibold text-gray-800">{book.author}</span>
+            <h2 className="text-3xl font-bold text-amber-900">{book.title}</h2>
+            <p className="text-md text-gray-600 mt-1">
+              by <span className="font-semibold">{book.author}</span>
             </p>
-            <p className="mt-5 text-gray-700 leading-relaxed">
+            <p className="mt-4 text-gray-700 leading-relaxed">
               {book.description}
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-6 gap-3">
-            <span className="text-yellow-600 font-semibold text-lg">
+          {/* Rating & Category */}
+          <div className="flex justify-between items-center mt-6">
+            <span className="text-yellow-600 font-semibold">
               ⭐ {book.rating} / 5
             </span>
-            <span className="px-4 py-1.5 text-sm bg-indigo-100 text-indigo-700 rounded-full font-medium shadow-sm">
+            <span className="px-3 py-1 text-sm bg-amber-100 text-amber-800 rounded-full">
               {book.category}
             </span>
           </div>
@@ -45,5 +57,3 @@ export const Bookdetail = ({ book }) => {
     </div>
   );
 };
-
-
