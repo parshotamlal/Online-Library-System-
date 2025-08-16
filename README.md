@@ -58,7 +58,7 @@ Follow these steps to run the project locally:
 <div align="center" style="background:#000; padding:15px; border-radius:10px;">
 
 # 1️⃣ Clone the repo
-git clone https://github.com/your-username/online-library-system.git
+git clone [https://github.com/parshotamlal/Online-Library-System-.git]
 
 # 2️⃣ Navigate into project folder
 cd online-library-system
@@ -74,5 +74,6 @@ npm run build
 
 # 6️⃣ Preview production build (optional)
 npm run preview
+
 
 
