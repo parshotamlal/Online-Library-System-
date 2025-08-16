@@ -1,4 +1,4 @@
-# 📚 Online Library System  
+#  Online Library System  
 
 A **full-stack React + Redux library system** where users can browse books by category, view details, and add new books with ease.  
 
@@ -20,17 +20,6 @@ A **full-stack React + Redux library system** where users can browse books by ca
 - 📂 **Category-based Routing** using React Router  
 - 🆕 **Displays Newly Added Books** instantly (Redux state)  
 - ❌ **404 Page** for undefined routes  
-
-
----
-
-## 🛠️ Tech Stack  
-
-- ⚛️ **React 18**  
-- 🟣 **Redux Toolkit**  
-- 🛣 **React Router DOM v6**  
-- 🎨 **TailwindCSS / Material UI (MUI)**  
-- ⚡ **Vite / Create React App**  
 
 ---
 
@@ -60,4 +49,30 @@ src/
 ├── AppLayout.jsx           # Navbar + Footer layout
 ├── App.jsx                 # Route configuration
 └── main.jsx                # React entry point
+
+
+## ⚡ Installation & Setup  
+
+Follow these steps to run the project locally:  
+
+<div align="center" style="background:#000; padding:15px; border-radius:10px;">
+
+# 1️⃣ Clone the repo
+git clone https://github.com/your-username/online-library-system.git
+
+# 2️⃣ Navigate into project folder
+cd online-library-system
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start development server
+npm run dev
+
+# 5️⃣ Build for production
+npm run build
+
+# 6️⃣ Preview production build (optional)
+npm run preview
+
 
