@@ -1,79 +1,68 @@
-#  Online Library System  
+# 🛒 ShoppyGlobe – E-commerce Application
 
-A **full-stack React + Redux library system** where users can browse books by category, view details, and add new books with ease.  
-
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Redux-Toolkit-purple?style=for-the-badge&logo=redux" />
-  <img src="https://img.shields.io/badge/Router-DOM-orange?style=for-the-badge&logo=reactrouter" />
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
-</p>  
+Welcome to **ShoppyGlobe**, a modern, fully functional **e-commerce website** built with **React, Redux Toolkit, and React Router**.  
+This project provides an **intuitive shopping experience** and demonstrates **real-world use of state management, dynamic routing, mock API integration, and UI/UX best practices**.
 
 ---
 
-## 🚀 Features  
+## ⚙️ Features
 
-- 📖 **Home Page** with welcome message & categories  
-- 🔍 **Search & Filter** books by title or author  
-- ➕ **Add Book** functionality with validation  
-- 📂 **Category-based Routing** using React Router  
-- 🆕 **Displays Newly Added Books** instantly (Redux state)  
-- ❌ **404 Page** for undefined routes  
+✅ Responsive and Clean UI  
+✅ Add / Remove products to and from cart  
+✅ Product filtering by category  
+✅ Real-time product search  
+✅ Quantity management in cart  
+✅ Checkout and Order Success page  
+✅ Persistent cart using **localStorage**  
+✅ Dynamic routing with React Router  
+✅ Toast notifications for actions  
+✅ Carousel on the home page  
+✅ Category & Product detail pages  
+✅ Custom **404 Not Found** page  
+✅ Footer with helpful links and social icons  
 
 ---
 
-## 🧭 Project Structure  
+## 🧩 Tech Stack
 
-src/
-├── Components/
-│   ├── AddBook/
-│   │   └── AddBook.jsx
-│   ├── BookCard/
-│   │   └── BookCard.jsx
-│   ├── BrowseBooks/
-│   │   └── BrowseBooks.jsx
-│   ├── BookDetail/
-│   │   └── BookDetail.jsx
-│   ├── Home/
-│   │   └── Home.jsx
-│   └── NotFound/
-│       └── NotFound.jsx
-│
-├── Features/
-│   └── bookSlice.js        # Redux slice for book state
-│
-├── Store/
-│   └── store.js            # Redux store configuration
-│
-├── AppLayout.jsx           # Navbar + Footer layout
-├── App.jsx                 # Route configuration
-└── main.jsx                # React entry point
+- **React** – UI Library  
+- **Redux Toolkit** – State Management  
+- **React Router DOM** – Client-side Routing  
+- **React Toastify** – Toast Notifications  
+- **DummyJSON API** – Mock product data  
+- **CSS Modules** – Component-level styling  
+- **React Responsive Carousel** – Homepage carousel  
+
+---
+
+## 📁 Folder Structure
 
 
-## ⚡ Installation & Setup  
 
-Follow these steps to run the project locally:  
 
-<div align="center" style="background:#000; padding:15px; border-radius:10px;">
+---
 
-# 1️⃣ Clone the repo
-git clone [https://github.com/parshotamlal/Online-Library-System-.git]
+## 🚀 Getting Started
 
-# 2️⃣ Navigate into project folder
-cd online-library-system
+Follow these steps to run the project locally:
 
-# 3️⃣ Install dependencies
+### 1. Clone the repository
+
+git clone https://github.com/your-username/ShoppyGlobe-E-commerce-Application.git
+
+
+### 2. Change the directory
+cd ShoppyGlobe
+3. Install dependencies
 npm install
 
-# 4️⃣ Start development server
+4. Start the development server
 npm run dev
 
-# 5️⃣ Build for production
-npm run build
+---
 
-# 6️⃣ Preview production build (optional)
-npm run preview
+🛒 APIs Used
 
-
-
+All product data is powered by DummyJSON
+ –
+a free mock API for products, categories, and search functionality.
