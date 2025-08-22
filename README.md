@@ -37,6 +37,9 @@ This project provides an **intuitive shopping experience** and demonstrates **re
 
 ## 📁 Folder Structure
 
+<img width="277" height="557" alt="image" src="https://github.com/user-attachments/assets/1a6537a8-b783-4159-b55f-3562ab74623a" />
+
+
 
 
 
@@ -66,3 +69,4 @@ npm run dev
 All product data is powered by DummyJSON
  –
 a free mock API for products, categories, and search functionality.
+
